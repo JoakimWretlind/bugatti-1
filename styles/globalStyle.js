@@ -12,14 +12,11 @@ export const bugattiTheme = {
   small: "2rem",
 
   // Screen Sizes
-  smallScreen: "417px",
-  m: "767px",
+  extraSmallScreen: "417px",
+  smallScreen: "620px",
+  mediumScreen: "767px",
   largeScreen: "917px"
 };
-
-export const bugattiSizes = {
-
-}
 
 export const GlobalStyle = createGlobalStyle`
     *,
@@ -54,4 +51,6 @@ export const GlobalStyle = createGlobalStyle`
     .cars{
       object-fit: cover;
     }
+
+    
 `;

@@ -45,7 +45,7 @@ const CustomCursor = () => {
     // classnames allow us to put all the tags, classes and such inside our querySelector.
     // The stuff in here will be the things that will affect the cursor
     useEffect(() => {
-        document.querySelectorAll('a, .link, .leftArrow, .card').forEach((el) => {
+        document.querySelectorAll('a,  .leftArrow, .card').forEach((el) => {
             el.addEventListener("mouseover", () => dispatch({ type: 'HOVERED' }));
             el.addEventListener("mouseout", () => dispatch({ type: 'UNHOVERED' }));
         })

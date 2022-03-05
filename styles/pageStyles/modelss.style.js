@@ -34,14 +34,21 @@ export const InnerWrapper = styled.div`
 /*********** TOP SECTION ************/
 export const TopSection = styled.div`
     height: 18vh;
-    width: 100vw;
+    width: 85vw;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: flex-end;
-    padding: 2rem;
+    @media (min-width: ${props => props.theme.smallScreen}){
+        height: 14vh;
+        width: 80vw;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding: 2rem;        
+    }
     @media (min-width: ${props => props.theme.largeScreen}){
         height: 14vh;
-        width: 70vw;
+        width: 80vw;
     }
 `;
 
@@ -68,7 +75,7 @@ export const MiddleSection = styled.div`
     align-items: flex-start;
     @media (min-width: ${props => props.theme.largeScreen}){
         height: 74vh;
-        width: 70vw;
+        width: 80vw;
         padding: 3rem 0 5rem;
         display: flex;
         flex-wrap: nowrap;
@@ -83,11 +90,13 @@ export const CardWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: flex-start;
-    &.cardWrapper:not(:focus-within):not(:hover){
-        .card{
-            background: transparent;
+    &.container:not(:focus-within):not(:hover) {
+    .hover { 
+    background: transparent;
+    transform: translateY(0);
+    opacity: 1;
         }
-    }    
+    }
     @media (min-width: ${props => props.theme.largeScreen}){
         display: flex;
         flex-wrap: nowrap;
@@ -99,27 +108,36 @@ export const CardWrapper = styled.div`
 export const Card = styled.div`
     height: 100%;
     min-height: 64vh;
-    min-width: 26rem;
+    min-width: 29rem;
     width: clamp(18rem, 22vw, 30rem);
     margin: 2rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background: transparent;
+        transition: .4s ease-in-out;
+        transform: translateY(3rem);
+        opacity: .5;
     &:focus,
-    &:hover{
+    &:hover {
         background: transparent;
+        transform: translateY(0rem);
+        opacity: 1;
     }
     &:focus ~ &,
     &:hover ~ & {
-        background: yellow;
+        transform: translateY(3rem); 
+        opacity: .5;
     }
+    
     @media (min-width: ${props => props.theme.largeScreen}){
         margin: 0 1rem;
-        min-width: 17rem;
+        min-width: 20rem;
+        max-width: 26rem;
+        
     }    
 `;
+
 
 export const ModelName = styled.h2`
     text-transform: uppercase;
@@ -149,3 +167,4 @@ export const BottomSection = styled.div`
         width: 100%;
     }
 `;
+

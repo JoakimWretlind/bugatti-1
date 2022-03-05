@@ -3,7 +3,7 @@ import {
     TopSection, Header,
     InnerWrapper, MiddleSection,
     BottomSection
-} from '../../styles/pageStyles/models.style'
+} from '../../styles/pageStyles/modelss.style'
 import ModelCard from "./Card"
 
 const ModelsPage = () => {
