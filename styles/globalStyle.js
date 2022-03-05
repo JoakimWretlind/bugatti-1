@@ -12,8 +12,9 @@ export const bugattiTheme = {
   small: "2rem",
 
   // Screen Sizes
-  xs: "417px",
-  m: "767px"
+  smallScreen: "417px",
+  m: "767px",
+  largeScreen: "917px"
 };
 
 export const bugattiSizes = {

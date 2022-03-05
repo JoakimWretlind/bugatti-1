@@ -1,10 +1,5 @@
 import React, { useRef, useState, useCallback, useEffect } from "react"
-import {
-  useViewportScroll,
-  useTransform,
-  useSpring,
-  motion
-} from "framer-motion"
+import { useViewportScroll, useTransform, useSpring, motion } from "framer-motion"
 import { AnimatePresence } from 'framer-motion'
 import { ThemeProvider } from "styled-components"
 import { bugattiTheme, GlobalStyle } from '../styles/globalStyle'
@@ -53,12 +48,10 @@ function MyApp({ Component, pageProps, router }) {
             as={motion.div}
             ref={scrollRef}
             style={{ y: spring }} // translateY of scroll container using negative scroll value
-            className="scroll-container"
-          >
+            className="scroll-container" >
             <AnimatePresence exitBeforeEnter initial={false}
               onExitComplete={() => window.scrollTo(0, 0)}>
               <Component {...pageProps} router={router} key={router.pathname} />
-
             </AnimatePresence>
           </ScrollContainer>
           <div style={{ height: pageHeight }} />
@@ -69,12 +62,3 @@ function MyApp({ Component, pageProps, router }) {
 }
 
 export default MyApp
-
-
-/**
- * TODO
- * Fix navbar when resize
- * fix cursor animation on hover
- * fix custom navicon for small screen
- * Put cards inside of links and link them
- */
