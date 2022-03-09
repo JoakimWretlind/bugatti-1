@@ -8,6 +8,7 @@ import { ScrollContainer } from '../styles/scrolling.style'
 import CustomCursor from '../components/customCursor/index'
 
 function MyApp({ Component, pageProps, router }) {
+
   // Scroll container
   const scrollRef = useRef(null)
 

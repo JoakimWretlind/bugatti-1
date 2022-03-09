@@ -568,6 +568,11 @@ css-to-react-native@^3.0.0:
     css-color-keywords "^1.0.0"
     postcss-value-parser "^4.0.2"
 
+curtainsjs@>=8.1.0:
+  version "8.1.3"
+  resolved "https://registry.yarnpkg.com/curtainsjs/-/curtainsjs-8.1.3.tgz#577eccdca1996e6cf2cdb56e9f25070037290050"
+  integrity sha512-E98l9mRNyJNjp1zGAqDRQgzuK0jEfblIfTZd3Q5c18gVnMYt4riag8fGcnmlc8fL7HNFLJctdpt9Ph3KPVKT6g==
+
 damerau-levenshtein@^1.0.7:
   version "1.0.8"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.8.tgz#b43d286ccbd36bc5b2f7ed41caf2d0aba1f8a6e7"
@@ -1613,6 +1618,13 @@ queue-microtask@^1.2.2:
   version "1.2.3"
   resolved "https://registry.yarnpkg.com/queue-microtask/-/queue-microtask-1.2.3.tgz#4929228bbc724dfac43e0efb058caf7b6cfb6243"
   integrity sha512-NuaNSa6flKT5JaSYQzJok04JzTL1CA6aGhv5rfLW3PgqA+M2ChpZQnAC8h8i4ZFkBS8X5RqkDBHA7r4hej3K9A==
+
+react-curtains@^1.0.10:
+  version "1.0.10"
+  resolved "https://registry.yarnpkg.com/react-curtains/-/react-curtains-1.0.10.tgz#e697c1cd6ec2d2c97d8dbaca043305d75fd43bfa"
+  integrity sha512-8bzyl/v8nYDUlYUlTGvj7WWrzIcJaGO1W+jv3oIWZkeJtBpd1KoJRGS4cTXJIOiEyLsVUMBOp9i5bK+Po7Ow7w==
+  dependencies:
+    curtainsjs ">=8.1.0"
 
 react-dom@17.0.2:
   version "17.0.2"

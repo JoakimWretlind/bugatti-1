@@ -51,6 +51,5 @@ export const GlobalStyle = createGlobalStyle`
     .cars{
       object-fit: cover;
     }
-
     
 `;

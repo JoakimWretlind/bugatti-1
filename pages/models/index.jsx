@@ -1,24 +1,20 @@
-import {
-    MainWrapper,
-    TopSection, Header,
-    InnerWrapper, MiddleSection,
-    BottomSection
-} from '../../styles/pageStyles/modelss.style'
-import ModelCard from "./Card"
+import { ModelsSection, TopSection, MiddleSection, BottomSection } from "../../styles/pageStyles/models.style"
+import { OurModels } from "./OurModels";
+import ModelCard from "./ModelCard";
 
 const ModelsPage = () => {
     return (
-        <MainWrapper>
-            <InnerWrapper>
+        <>
+            <ModelsSection>
                 <TopSection>
-                    <Header>our models</Header>
+                    <OurModels />
                 </TopSection>
                 <MiddleSection>
                     <ModelCard />
                 </MiddleSection>
                 <BottomSection />
-            </InnerWrapper>
-        </MainWrapper>
+            </ModelsSection>
+        </>
     )
 }
 

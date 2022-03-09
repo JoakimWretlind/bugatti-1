@@ -58,10 +58,6 @@ const Navbar = () => {
         }
     }
 
-    const handleModelsClick = (index) => {
-        console.log(index)
-    }
-
     return (
         <>
             <NavToggler onClick={toggleNavbar} isOpen={isOpen}>
@@ -84,7 +80,7 @@ const Navbar = () => {
                                     onClick={() => {
                                         toggleNavbar();
                                         setIsActive(index);
-                                        handleModelsClick(index)
+                                        // handleModelsClick(index)
                                     }}
                                     className={`${index === isActive && 'active'}`}
                                     className={`${index === 2 && 'card'}`}

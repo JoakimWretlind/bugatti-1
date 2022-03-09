@@ -10,7 +10,7 @@ export const NavToggler = styled.div`
     font-size: 2rem;
     transition: .4s ease-out;
     z-index: 2000;
-    @media (min-width: ${props => props.theme.m}){
+    @media (min-width: ${props => props.theme.smallScreen}){
         display: none;
     }
 `;
@@ -28,7 +28,7 @@ export const Nav = styled.nav`
     transform: skewY(3deg);
     background: ${props => props.theme.red};
     z-index: 100;
-    @media (min-width: ${props => props.theme.m}){
+    @media (min-width: ${props => props.theme.smallScreen}){
         top: 0;
         left: 0;
         height: 6rem;
@@ -47,7 +47,7 @@ export const NavUL = styled.ul`
     justify-content: center;
     transform: skewY(6deg);
     background: ${props => props.theme.black};
-    @media (min-width: ${props => props.theme.m}){
+    @media (min-width: ${props => props.theme.smallScreen}){
         overflow: hidden;
         margin-top: 0;
         margin-left: 3rem;
@@ -105,7 +105,7 @@ export const NavA = styled.a`
         }
         
     }
-    @media (min-width: ${props => props.theme.m}){
+    @media (min-width: ${props => props.theme.smallScreen}){
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -132,7 +132,7 @@ export const NavA = styled.a`
 // This holds the lines for opening the full screen navbar
 export const IconContainer = styled.div`
     display: none;
-   @media (min-width: ${props => props.theme.m}){
+   @media (min-width: ${props => props.theme.smallScreen}){
         position: fixed;
         top: 1.8rem;
         left: 3rem;
@@ -157,7 +157,7 @@ export const Line = styled.div`
 export const LeftArrow = styled(BsArrowLeft)`
     position: absolute; 
     visibility: hidden;
-    @media (min-width: ${props => props.theme.m}){
+    @media (min-width: ${props => props.theme.smallScreen}){
         visibility: visible;
         font-size: 1.6rem;
         top: -2rem;
