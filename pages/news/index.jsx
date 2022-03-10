@@ -1,10 +1,13 @@
+import { FadeInTransition } from "../../components/animations/pageTransitions/fadeInTransition"
 import { Section, Header } from "../../styles/common.style"
 
 const NewsPage = () => {
     return (
-        <Section>
-            <Header>news</Header>
-        </Section>
+        <FadeInTransition>
+            <Section>
+                <Header>news</Header>
+            </Section>
+        </FadeInTransition>
     )
 }
 

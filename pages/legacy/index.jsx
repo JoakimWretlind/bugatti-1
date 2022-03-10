@@ -1,11 +1,11 @@
+import { FadeInTransition } from "../../components/animations/pageTransitions/fadeInTransition"
 import { MainWrapper, Hero, Legacy } from "../../styles/scrolling.style"
 import { Header } from "../../styles/common.style"
-import LegacyPageTransition from "../../components/animations/pageTransitions/legacypage.transition"
 
 const LegacyPage = () => {
     return (
         <>
-            <LegacyPageTransition>
+            <FadeInTransition>
                 <MainWrapper>
                     <Hero>
                         <Header>legacy</Header>
@@ -16,7 +16,7 @@ const LegacyPage = () => {
                         <Header>content 3</Header>
                     </Legacy>
                 </MainWrapper>
-            </LegacyPageTransition>
+            </FadeInTransition>
         </>
     )
 }

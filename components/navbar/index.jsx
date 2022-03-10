@@ -1,4 +1,4 @@
-import { useState, useRef } from "react"
+import { useState, useRef, useEffect } from "react"
 import Link from "next/link"
 import gsap from "gsap"
 import { NavToggler, Nav, NavUL, NavLi, NavA, IconContainer, Line, LeftArrow } from "./navbar.style"
@@ -20,7 +20,6 @@ const Navbar = () => {
     const ulRef = useRef(null)
     const linkRefs = useRef([])
     linkRefs.current = []
-
 
     const toggleNavbar = () => {
         setIsOpen(!isOpen)
@@ -80,7 +79,6 @@ const Navbar = () => {
                                     onClick={() => {
                                         toggleNavbar();
                                         setIsActive(index);
-                                        // handleModelsClick(index)
                                     }}
                                     className={`${index === isActive && 'active'}`}
                                     className={`${index === 2 && 'card'}`}

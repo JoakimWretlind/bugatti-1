@@ -50,8 +50,7 @@ function MyApp({ Component, pageProps, router }) {
             ref={scrollRef}
             style={{ y: spring }} // translateY of scroll container using negative scroll value
             className="scroll-container" >
-            <AnimatePresence exitBeforeEnter initial={false}
-              onExitComplete={() => window.scrollTo(0, 0)}>
+            <AnimatePresence exitBeforeEnter>
               <Component {...pageProps} router={router} key={router.pathname} />
             </AnimatePresence>
           </ScrollContainer>

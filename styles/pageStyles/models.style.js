@@ -42,7 +42,8 @@ export const MiddleSection = styled.div`
     grid-column: 2;   
     display: flex;
     justify-content: center;
-    align-items: center;       
+    align-items: center;  
+    
 `;
 
 export const Wrapper = styled.ul`
@@ -85,6 +86,7 @@ export const Card = styled.li`
     margin: 1rem;
     cursor: pointer;
     pointer-events: auto;  // important
+    transition: .5s ease-in-out;
     &::before{
         content: "";
         position:absolute;
